@@ -1,0 +1,13 @@
+<import src="../tpls/category/category-tpl.wxml" />
+<view class="container category-container">
+  <view class="category-box">
+    <view class="left-box">
+      <block wx:for="{{categoryTypeArr}}">
+        <view class="menu-item {{currentMenuIndex==index?'selected':''}}" data-id="{{item.id}}" data-index="{{index}}" bindtap="changeCategory">{{item.name}}</view>
+      </block>
+    </view>
+    <view class="right-box">
+      <template is="categoryDetail" data="{{categoryInfo:categoryInfo}}" />
+    </view>
+  </view>
+</view>

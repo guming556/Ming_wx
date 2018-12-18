@@ -1,0 +1,47 @@
+@import "../tpls/products/products-tpl.wxss";
+.swiper{
+  height: 400rpx;
+  width:100%
+}
+.banner-item{
+  height: 100%;
+  width: 100%
+}
+.item-image{
+  height: 100%;
+  width: 100%
+}
+.home-main-header{
+  display: flex;
+  height: 60rpx;
+  color: #AB956D;
+  background-color: #ffffff;
+  font-size: 32rpx;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+  margin-bottom: 15rpx;
+}
+.theme-box{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between
+}
+.theme-item{
+  display: flex;
+  height: 357rpx;
+  width: 50%;
+  border-bottom: 4rpx solid #ffffff; 
+  position: relative;
+  box-sizing: border-box;
+}
+.theme-item:first-child{
+  border-right: 4rpx solid #ffffff;
+}
+.theme-item.big{
+  width: 100%
+}
+.theme-item image {
+  width: 100%;
+  height: 100%
+}
